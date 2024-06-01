@@ -3,56 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jane Grit Profile</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>Rest country API</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <section class="grit-box">
-        <h2 class="title">Jane's Grit Profile</h2>
-        <div class="content-grid">
-            <div class="profile-picture">
-                <!-- <img src="./asset/jane.png" alt="Jane's profile picture"/> -->
-            </div>
-            <div class="grit-content">
-                My name is Janet Bello.
-                Learning about grit gives me a better understanding of my weaknesses and strengths. However, over time I realized I've been able to overcome a larger percentage. Such as nurturing my passion, being persistent in going out of my comfort zone to actualize what I'm passionate about.
-                But a few ones left are emotional intelligence and imposter syndrome i.e. my feeling of not being capable or competent to take up a task, offer, or opportunity.
-                Applying to Kodecamp 4.0 is to equip me with necessary skills to fight my fear, face my challenges, and overcome them.
-                <p>
-                My goals for this program are to gain a better understanding of ReactJS, its application to real-world projects, and to be prepared for internships and hackathons after graduation.
-                It is important to achieve these goals because I want to win. I want to get a Tech Job, be the superstar tech sis, and be a solution provider to my community using technology.
-                Obstacles that are likely to come are time constraints and power supply. Knowing quite well that combining work with training like this will be challenging as I may not be able to attend some classes.
-                Anything worth doing well, is worth the sacrifice of doing extra. To overcome these obstacles, I've prepared myself to do a rewatch of videos at night, do my assignments or tasks at midnight to cover for my unavailability sometimes in the day.
-                I have a mentor who encourages me to be at my best...
-            </p>
-            </div>
-        </div>
-    </section>
+    <!-- <h1>dispglaying Countries from a Restful API</h1> -->
+    <div class="">
+        <nav class="nav-head">
+          <h3><b>Where is the world?</b></h3>
 
-    <section class="testimonials">
-        <h2 class="title">Testimonials</h2>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <p>"Jane is incredibly dedicated and hardworking. She always goes the extra mile!"</p>
-                    <p><b>- Mary Egbogie</b></p>
-                </div>
-                <div class="swiper-slide">
-                    <p>"A true inspiration! Jane's grit and determination are unmatched."</p>
-                    <p><b>- Adam Smith</b></p>
-                </div>
-                <div class="swiper-slide">
-                    <p>"Working with Jane has been a fantastic experience. She delivers exceptional results."</p>
-                    <p><b>- Akin Paul</b></p>
-                </div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
+          <p id="dark-mode-toggle"> <i class="fa-regular fa-moon"></i>Dark Mode</p>
+        </nav>
+        
+        <section class="hero">
+            <div class="header">
 
-    <script src="./script.js"></script>
+                <input type="text" id="search" placeholder="Search for a country...">
+                <select id="region-filter">
+                    <option value="">Filter by Region</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Americas">Americas</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+            </div>
+            
+                <div class="countries"  id="countries">
+                
+           
+            
+
+            </div>
+        </section>
+    </div>
+    
+
+
+    <script src="./Script/restapi.js"></script>
 </body>
 </html>
