@@ -3,14 +3,14 @@
     --very-dark-blue-bg: hsl(207, 26%, 17%);
     --very-dark-blue-text: hsl(200, 15%, 8%);
     --dark-gray: hsl(0, 0%, 52%);
-    --very-light-gray-bg: hsla(0, 0%, 83%, 0.521);
+    --very-light-gray-bg: hsla(0, 0%, 89%, 0.521);
     --white: hsl(0, 0%, 100%);
     
     
     --header-bg: var(--white);
     --header-text: var(--very-dark-blue-text);
     --body:var(--very-light-gray-bg);
-    --card-bg: var(--very-light-gray-bg);
+    --card-bg: var(--white);
     --card-text: var(--very-dark-blue-text);
     --card-border: var(--dark-gray);
     --font-family: 'Nunito Sans', sans-serif;
@@ -166,5 +166,17 @@ countryDetail.html styling */
     }
     .countries {
         grid-template-columns: 1fr;
+    }
+    .country-flag img {
+        width: 500px;
+        height: auto;
+        margin: auto;
+    }
+    .country-detail-flex{
+        flex-direction: column;
+    }
+
+    .country-detail-grid{
+        grid-template-columns:  1fr;
     }
 }

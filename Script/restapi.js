@@ -11,7 +11,7 @@ const loadCountryAPI = () => {
         .then(data => {
             countries = data; // Store data in the global variable
             displayCountries(countries); // Display all countries initially
-            console.log(countries)``
+            console.log(countries);
         })
         .catch(error => console.error('Error fetching countries:', error));
 }
