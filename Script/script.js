@@ -56,6 +56,7 @@ const displayCountryDetail = country => {
             </div>
             <div class="country-info">
                 <h2>${country.name.common}</h2>
+                <span class="country-detail-grid">
                 <p><strong>Native Name:</strong> ${nativeName}</p>
                 <p><strong>Population:</strong> ${country.population.toLocaleString()}</p>
                 <p><strong>Region:</strong> ${country.region}</p>
@@ -64,6 +65,7 @@ const displayCountryDetail = country => {
                 <p><strong>Top Level Domain:</strong> ${country.tld.join(', ')}</p>
                 <p><strong>Currencies:</strong> ${Object.values(country.currencies).map(c => c.name).join(', ')}</p>
                 <p><strong>Languages:</strong> ${Object.values(country.languages).join(', ')}</p>
+                </span>
             </div>
         </div>
     `;
